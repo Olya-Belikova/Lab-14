@@ -1,0 +1,123 @@
+using System;
+
+namespace Lab_14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /* №1
+            Console.Write("A = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("B = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a > b)
+            {
+                Console.Write("!!!A < B!!!");
+            }
+            else
+            {
+                for(int i = a; i < b+1; i++)
+                {
+                    for(int j = 0; j < i; j++)
+                    {
+                        Console.Write(i + ", ");
+                    }
+                }
+            }
+            */
+
+            /* №2
+            Console.Write("A = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("B = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a < b)
+            {
+                Console.Write("!!!A > B!!!");
+            }
+            else
+            {
+                while ((a - b) >= 0)
+                {
+                    a = a - b;
+                    Console.Write(a);
+                }
+            }
+            */
+
+            /* №3
+            Console.Write("N = ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int k = 0;
+            int i = 0;
+            if (n > 1)
+            {
+                while(i <= n)
+                {
+                    k++;
+                    i += k;
+                }
+                Console.Write("Наименьшее число = " + k + ", " + "Сумма = " + i);
+            }
+            else
+            { 
+                Console.Write("!!!N > 1!!!");
+            }
+            */
+
+            /* №4
+            double s = 1000;
+            int k = 0;
+            Console.Write("P = ");
+            double p = Convert.ToDouble(Console.ReadLine());
+            if (p < 0 || p > 25)
+            {
+                Console.Write("!!!0 < P < 25!!!");
+            }
+            else
+            {
+                while (s < 1100)
+                {
+                    s += s * p / 100;
+                    k++;
+                }
+                Console.Write(k + " месяца, " + "сумма вклада будет " + s + " руб.");
+            }
+            */
+
+            /* №5
+            Console.Write("A = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("B = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            while(a != b)
+            {
+                if (a > b)
+                    a -= b;
+                else
+                    b -= a;
+            }
+            Console.Write("A = " + a);
+            */
+
+
+            /* №5
+            Console.Write("N = ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int f1 = 1;
+            int f2 = 1;
+            int f = 0;
+            int k = 2;
+            while(f < n)
+            {
+                k++;
+                f = f2 + f1;
+                f2 = f1;
+                f1 = f;
+            }
+            Console.Write("K = " + k);
+            */
+        }
+    }
+}
